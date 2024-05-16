@@ -9,7 +9,6 @@
         <tree>
           <field name="name"/>
           <field name="value"/>
-          <field name="value2"/>
         </tree>
       </field>
     </record>
@@ -46,12 +45,18 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Menu 1" id="m10test.menu_1" parent="m10test.menu_root"/>
-    <menuitem name="Menu 2" id="m10test.menu_2" parent="m10test.menu_root"/>
+    <menuitem name="Receipts" id="m10test.menu_1" parent="m10test.menu_root"/>
+    <menuitem name="Delivery" id="m10test.menu_3" parent="m10test.menu_root"/>
+    <menuitem name="Return" id="m10test.menu_4" parent="m10test.menu_root"/>
+    <menuitem name="Operations" id="m10test.menu_2" parent="m10test.menu_root"/>
 
     <!-- actions -->
 
     <menuitem name="List" id="m10test.menu_1_list" parent="m10test.menu_1"
+              action="m10test.action_window"/>
+    <menuitem name="List" id="m10test.menu_3_list" parent="m10test.menu_3"
+              action="m10test.action_window"/>
+    <menuitem name="List" id="m10test.menu_4_list" parent="m10test.menu_4"
               action="m10test.action_window"/>
     <menuitem name="Server to list" id="m10test" parent="m10test.menu_2"
               action="m10test.action_server"/>
