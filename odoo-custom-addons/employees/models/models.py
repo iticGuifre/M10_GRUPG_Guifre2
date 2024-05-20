@@ -8,11 +8,17 @@ class employees(models.Model):
     _description = 'employees.employees'
 
     name = fields.Char()
-    # value = fields.Integer()
-    # value2 = fields.Float(compute="_value_pc", store=True)
+    last_name = fields.Char()
     description = fields.Text()
+    date_of_birth = fields.Char()
+    gender = fields.Char()
+    nationality = fields.Char()
+    email = fields.Char()
+    phone = fields.Integer()
+    address = fields.Char()
+    employee_id = fields.Integer()
+    department_id = fields.Integer()
+    job_title = fields.Char()
+    date_hired = fields.Char()
+    
 
-    # @api.depends('value')
-    # def _value_pc(self):
-    #     for record in self:
-    #         record.value2 = float(record.value) / 100
