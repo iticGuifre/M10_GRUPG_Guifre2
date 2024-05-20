@@ -8,7 +8,15 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
+          <field name="quantity"/>
+          <field name="state"/>
+          <field name="product_code"/>
+          <field name="product_category"/>
+          <field name="lot_number"/>
+          <field name="expiration_date"/>
+          <field name="weight"/>
+          <field name="dimensions"/>
+          <field name="color"/>
         </tree>
       </field>
     </record>
@@ -45,10 +53,10 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Receipts" id="m10test.menu_1" parent="m10test.menu_root"/>
-    <menuitem name="Delivery" id="m10test.menu_3" parent="m10test.menu_root"/>
-    <menuitem name="Return" id="m10test.menu_4" parent="m10test.menu_root"/>
-    <menuitem name="Operations" id="m10test.menu_2" parent="m10test.menu_root"/>
+    <menuitem name=" " id="m10test.menu_1" parent="m10test.menu_root"/>
+    <menuitem name=" " id="m10test.menu_3" parent="m10test.menu_root"/>
+    <menuitem name=" " id="m10test.menu_4" parent="m10test.menu_root"/>
+    <menuitem name=" " id="m10test.menu_2" parent="m10test.menu_root"/>
 
     <!-- actions -->
 

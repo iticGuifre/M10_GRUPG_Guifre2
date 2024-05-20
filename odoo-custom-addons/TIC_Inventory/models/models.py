@@ -8,9 +8,24 @@ class m10test(models.Model):
     _description = 'm10test.m10test'
 
     name = fields.Char()
-    value = fields.Integer()
+    quantity = fields.Integer()
     # value2 = fields.Float(compute="_value_pc", store=True)
     description = fields.Text()
+
+    state = fields.Selection([
+        ('preparing', 'Preparing'),
+        ('shipped', 'Shipped'),
+        ('received', 'Received'),
+        ('returned', 'Returned'),
+    ], string="State", default='preparing')
+
+    product_code = fields.Char()
+    product_category = fields.Char()
+    lot_number = fields.Integer()
+    expiration_date = fields.Char()
+    weight = fields.Integer()
+    dimensions = fields.Char()
+    color = fields.Char()
 
     # @api.depends('value')
     # def _value_pc(self):
