@@ -10,7 +10,7 @@ class employees(models.Model):
     name = fields.Char()
     last_name = fields.Char()
     description = fields.Text()
-    date_of_birth = fields.Char()
+    date_of_birth = fields.Date(string = "Birth date")
     gender = fields.Char()
     nationality = fields.Char()
     email = fields.Char()
@@ -19,6 +19,6 @@ class employees(models.Model):
     employee_id = fields.Integer()
     department_id = fields.Integer()
     job_title = fields.Char()
-    date_hired = fields.Char()
+    date_hired = fields.Date(string = "Hire date")
     
 

@@ -22,7 +22,7 @@ class m10test(models.Model):
     product_code = fields.Char()
     product_category = fields.Char()
     lot_number = fields.Integer()
-    expiration_date = fields.Char()
+    expiration_date = fields.Date(string = "Expiration date")
     weight = fields.Integer()
     dimensions = fields.Char()
     color = fields.Char()
